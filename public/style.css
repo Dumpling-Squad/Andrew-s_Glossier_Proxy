@@ -1,0 +1,32 @@
+.main-wrapper_inner {
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+}
+
+.currentHeading {
+  box-sizing: border-box;
+  text-align: left;
+  margin-top: inherit;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+#currentWhat:hover, #what:hover {
+  color: black;
+}
+
+#Highlights {
+  display: none;
+}
+
+.productHighlights-wrapper ul{
+  padding-left: 4px;
+  margin-left: 8px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
