@@ -27,4 +27,4 @@ build/
 public/bundle.js
 
 # Modules
-modules/git tracked
+modules/git-tracked
