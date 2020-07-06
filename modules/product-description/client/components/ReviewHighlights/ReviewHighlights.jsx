@@ -7,7 +7,6 @@ class ReviewHighlights extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      productId: 6,
       totalReviews: 0,
       highlights: [],
     };

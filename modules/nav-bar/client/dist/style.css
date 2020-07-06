@@ -24,7 +24,7 @@
   font-size: 12px;
   display: flex;
   justify-content: center;
-  background-color: #f5e3e7;
+  background-color: rgb(250, 242, 244);
   padding: 8px;
 }
 
@@ -48,7 +48,7 @@ span:hover {
   display: flex;
 }
 
-.title {
+#navBar .title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -56,6 +56,8 @@ span:hover {
   cursor: pointer;
   margin: 10px;
   text-align: center;
+  vertical-align: middle;
+  transform: scale(1, 1.25);
 }
 
 .upper-right-nav {

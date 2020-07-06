@@ -14,17 +14,18 @@
   margin-bottom: 24px;
 }
 
-.title {
-  display: block;
-  font-family: "Freight Display";
+#suggested-items .title {
+  font-family: "Freight Display", 'Athelas', Constantias, Georgia, Times, Times New Roman, serif;
   font-size: 36px;
-  font-style: normal;
+  line-height: 1.1;
   font-weight: 400;
-  height: 39px;
-  margin-bottom: 5px;
+  text-align: left;
+  display: block;
+  font-style: normal;
+  margin: 3rem 0 0;
   flex-shrink: 1;
   flex-grow: 1;
-  letter-spacing: 1.25px;
+  /* letter-spacing: 1.25px; */
 }
 
 .mockbar {
@@ -287,8 +288,8 @@ a:hover {
 
 
 
-.product-view{
-  position: absolute;
+.product-view {
+  position: fixed;
   width: 810px;
   height: 600px;
   padding: 10px;
@@ -299,7 +300,8 @@ a:hover {
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   background-color: #ffffff;
-  z-index: 2;
+  z-index: 2000;
+  box-shadow: 0 0 16px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
   overflow-x: auto;
   overflow-y: auto;
   display: block;
@@ -315,15 +317,18 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  z-index: 1;
+  height: 100vh;
+  z-index: 1500;
   background-color: #fafafa;
 }
 
 .qv-title {
   font-family: "Apercu Pro";
   font-size: 14px;
-  padding-left:20px;
+  padding: 16px 20px;
+  justify-content: space-between;
+  height: 56px;
+  display: flex;
 }
 
 

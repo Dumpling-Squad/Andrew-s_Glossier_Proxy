@@ -5,33 +5,33 @@ class Related2 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      images: []
-    }
+      images: [],
+    };
     this.setImages = this.setImages.bind(this);
   }
 
   componentDidMount() {
-    setTimeout(this.setImages, 300);
+    // setTimeout(this.setImages, 500);
   }
 
   setImages() {
-    var newArray = [];
+    // const newArray = [];
 
-    this.props.pics.map(pic => {
-      newArray.push(pic);
-    })
+    // this.props.pics.map((pic) => {
+    //   newArray.push(pic);
+    // });
 
     this.setState({
-      images: newArray
-    })
+      images: this.props.pics,
+    });
+    console.log(this.state.images);
   }
 
-
-  render () {
+  render() {
     return (
       <div>
-        {this.props.pics.map(pic => (
-          <RelatedList2 pics={pic} title={this.props.title} price={this.props.price}/>
+        {this.props.pics.map((pic, index) => (
+          <RelatedList2 key={index} pics={pic} title={this.props.title} price={this.props.price} />
         ))}
       </div>
       // <h2>{props.details.title}</h2>

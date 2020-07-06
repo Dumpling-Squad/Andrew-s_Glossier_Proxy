@@ -30,7 +30,8 @@ const insertMockData = (numberOfUsers) => {
   let users = createUsers(numberOfUsers);
   users.forEach((user)=>{
     db.query(`INSERT INTO users (username, passHash, firstName, lastName, ageRange, place, skinType, skinShade) VALUES("${user.username}", "${user.password}", "${user.firstName}", "${user.lastName}", "${user.ageRange}", "${user.location}", "${user.skinType}", "${user.skinShade}");`, (err, result)=>{
-      if (err) { console.error(err); } else { console.log('User successfully seeded'); }
+      if (err) { console.error(err); }
+      // else { console.log('User successfully seeded'); }
     });
     // console.log(user);
   });

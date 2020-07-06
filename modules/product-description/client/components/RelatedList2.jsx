@@ -13,8 +13,11 @@ class RelatedList2 extends React.Component {
       <div>
         <div id='containerAdd'>
           <img id='relatedPics2' src={this.props.pics} onClick={(e) => this.props.change(e)}></img>
-          <h3 id='containerTitle'>{this.props.title}</h3>
-          <button id='addToBag'>Add to Bag - ${this.props.price}</button>
+          <div>
+            <h3 id='containerTitle'>{this.props.title}</h3>
+            <button id='addToBag'>Add to Bag - ${this.props.price}</button>
+          </div>
+
         </div>
       </div>
     );

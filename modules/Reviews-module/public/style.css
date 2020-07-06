@@ -195,7 +195,7 @@ path.star {
 
 .productImage {
   background-repeat: no-repeat;
-  min-height: 516px;
+  /* min-height: 516px; */
   height: 100%;
   padding: 0 16px;
   position: sticky;
@@ -206,6 +206,7 @@ path.star {
   flex-basis: 41.6667%;
   width: 41.6667%;
   max-width: 41.6667%;
+  margin-bottom: 16px;
 }
 
 .productHighlights-wrapper {
@@ -290,6 +291,8 @@ path.star {
   padding: 16px;
   background: rgb(255, 255, 255);
   border-radius: 3px;
+  list-style-type: none;
+  list-style-position: unset;
 }
 
 #reviews-accordion ul > li:not(:last-child) {
@@ -329,6 +332,7 @@ button.readAll span:first-child {
   font-size: 16px;
   line-height: 24px;
   margin: 0px;
+  text-decoration: none;
 }
 
 button.readAll span:last-child {
@@ -554,6 +558,7 @@ span.helpful {
 
 .reviews-filter-container {
   display: inherit;
+  text-decoration: none;
 }
 
 .review-clear-filters {

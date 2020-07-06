@@ -23,15 +23,15 @@ class Related extends React.Component {
 
     this.setState({
       images: newArray
-    })  
+    })
   }
 
 
   render () {
     return (
       <div>
-        {this.props.pics.map(pic => (
-          <RelatedList pics={pic} change={(e) => this.props.change(e)}/>
+        {this.props.pics.map((pic, index) => (
+          <RelatedList key={index} pics={pic} change={(e) => this.props.change(e)}/>
         ))}
       </div>
       // <h2>{props.details.title}</h2>
