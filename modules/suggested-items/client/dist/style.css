@@ -15,24 +15,25 @@
 }
 
 #suggested-items .title {
+  display: block;
   font-family: "Freight Display", 'Athelas', Constantias, Georgia, Times, Times New Roman, serif;
   font-size: 36px;
+  font-style: normal;
   line-height: 1.1;
   font-weight: 400;
+  height: 39px;
   text-align: left;
-  display: block;
-  font-style: normal;
   margin: 3rem 0 0;
   flex-shrink: 1;
   flex-grow: 1;
   /* letter-spacing: 1.25px; */
 }
 
-.mockbar {
+/* .mockbar {
   display: flex;
   flex-grow: 1;
   justify-content: center;
-}
+} */
 
 .items-container {
   display: flex;
@@ -273,6 +274,12 @@ a:hover {
   justify-content: center;
 }
 
+.qv-img-circles {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35px;
+}
+
 .swatch-button:hover, .qv-img-circles:hover {
   border-color: blue;
   border-width: 2px;
@@ -388,6 +395,11 @@ a.see-page {
   font-size: 14px;
 }
 
+.qv-shades, .qv-size-title {
+  font-family: "Apercu Pro Bold";
+  font-size: 14px;
+}
+
 .qv-button {
   align-items: center;
   background-color: black;
@@ -418,6 +430,37 @@ a.see-page {
   text-align: center;
   cursor: pointer;
   text-rendering: auto;
+  margin-left: 5%;
+}
+
+
+
+.qv-cart .input {
+  border-radius: 3px;
+  border-color: black;
+  width: 72px;
+  border: 1px solid;
+  display: flex;
+  text-align: center;
+  min-height: 48px;
+  padding: 6px 0;
+  position: relative;
+  align-items: center;
+}
+
+.qv-signs {
+  background-color: white;
+  border: none;
+  align-items: flex-start;
+  cursor: pointer;
+  flex: 1 1;
+
+}
+
+.qv-cart {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
 }
 
 .qv-img-row {

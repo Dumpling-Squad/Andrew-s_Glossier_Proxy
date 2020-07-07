@@ -72,35 +72,32 @@ span:hover {
   cursor: pointer;
 }
 /* TABLEOFCONTENTS */
-
 .tableOfContents-window{
   top:0;
   left: 0;
   z-index: 1;
   position: fixed;
-  background-color: #FAFAFA;
+  background-color: white;
   opacity: 80%;
   width: 100%;
   height: 100%;
 }
-
 .tableOfContents {
   top: 0;
   left: 0;
   z-index: 2;
   position: fixed;
   height: 100%;
-  width: 15%;
+  width: 25%;
   opacity: unset;
   background-color: white;
   border-right: 1px solid gray;
   font-family: "Apercu Pro";
-  font-size: 14px;
+  font-size: 16px;
   /* opacity: unset; */
   animation-name: slidein;
   animation-duration: 0.5s;
 }
-
 @keyframes slidein {
   0% {
     margin-left: -100%;
@@ -108,10 +105,7 @@ span:hover {
   100% {
     margin-left: 0%;
   }
-
 }
-
-
 .contentsClose {
   position: fixed;
   margin: 25px 0px 0px 15px;
@@ -120,48 +114,43 @@ span:hover {
   border: 0;
   background-color: white;
 }
-
 .contentsClose:focus {
   outline-width: 0
 }
-
 .contentsBox {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 95px 15px 0px 15px;
-  height: 80%;
+  height: 76%;
+  cursor: pointer;
 }
-
 .contents {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
+  margin-bottom: 12%;
 }
-
 #contentCategories {
   height: 40%;
 }
-
 #contentCompany {
-  height: 10%;
+  /* height: 10%; */
 }
-
 .shipToBox {
   /* margin: 10%; */
   border-top: 1px solid #000;
   height: 10%;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
-
 .selectShip {
   margin: 20px 15px;
-  height: 45%;
+  height: 50%;
   width: 90%;
   border-radius: 5px;
+  padding-top: 5px;
 }
-
 .shipToText {
   z-index: 1;
   margin: 22px 20px;
@@ -185,6 +174,7 @@ span:hover {
   font-family: "Apercu Pro";
   font-size: 12px;
   overflow-y: scroll;
+  z-index: 2000;
   border-bottom: 1px solid #000;
 }
 

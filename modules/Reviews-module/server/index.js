@@ -10,12 +10,14 @@ const app = express();
 const port = 3001;
 
 app.use(bodyparser.json());
-app.use(bodyparser.urlencoded({extended: true}));
+app.use(bodyparser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(morgan('dev'));
 
-app.use('/', express.static(path.join(__dirname + '/../public')));
+app.use('/', express.static(path.join(`${__dirname}/../public`)));
 app.use('/reviews', reviewsRouter);
+// Users endpoint was created to be used for authorization, but currently not being used
 app.use('/users', usersRouter);
 
+// eslint-disable-next-line no-console
 app.listen(port, () => console.log(`Reviews module app listening at http://localhost:${port}`));

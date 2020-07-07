@@ -7,41 +7,35 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 const port = 3002;
-const randomProductId = (numberOfProducts) => Math.floor(Math.random() * numberOfProducts);
-let counter = 1;
-let productId = randomProductId(100);
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(morgan('dev'));
 
+// Serve static files
 app.use('/', express.static(path.join(`${__dirname}/../public`)));
 
-// app.use((req, res, next) => {
-//   productId = randomProductId(100);
-//   next();
-// });
+// Generate a random productId
+const randomProductId = (numberOfProducts) => Math.floor(Math.random() * numberOfProducts);
+let counter = 0;
+let productId = randomProductId(100);
 
-// Sets the productId for all modules
+// Sets the productId for all modules that request to this endpoint
 app.get('/productId', (req, res) => {
-  counter += 1;
+  // Currently endpoint is being hit twice on each reload; by Mrinal's module and reviews module
   if (counter % 2 === 0) {
+    // If endpoint has been hit twice since last time prodId was generated, geenerate a new one
     productId = randomProductId(100);
-    console.log(productId);
     res.status(200).json({ productId });
   } else {
+    // Else send the current prodId
     res.status(200).json({ productId });
   }
+  // Increment the counter each time the endpoint receives a request
+  counter += 1;
 });
 
-// const staticPath = `${__dirname}/../public`;
-// app.use('/products/:id', express.static(staticPath));
-
-// app.use(
-//   '/products/:id/details',
-//   createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true })
-// );
 // Mrinal's services
 app.use('/images', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));
 app.use('/images/:id', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));

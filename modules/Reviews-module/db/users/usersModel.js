@@ -1,20 +1,23 @@
+// These queries are currently not being used
 const db = require('../index.js');
 
 const model = {
-  getUser: (id, callback)=>{
-    db.query(`SELECT * FROM users WHERE id=${id}`, (err, result) =>{
+  getUser: (id, callback) => {
+    db.query(`SELECT * FROM users WHERE id=${id}`, (err, result) => {
       if (err) {
-        console.log('Error querying the DB for user');
+        // eslint-disable-next-line no-console
+        console.error('Error querying the DB for user');
         callback(err, null);
       } else { callback(null, result); }
     });
   },
-  postAuth: ({username, passHash}, callback)=>{
-    db.query(`SELECT passHash FROM users WHERE username="${username}"`, (err, result) =>{
+  postAuth: ({ username, passHash }, callback) => {
+    db.query(`SELECT passHash FROM users WHERE username="${username}"`, (err, result) => {
       if (err) {
-        console.log('Error querying the DB for auth');
+        // eslint-disable-next-line no-console
+        console.error('Error querying the DB for auth');
         callback(err, null);
-        //if hashed pass sent in post matches the one stored in the DB, send back success
+        // if hashed password sent in post matches the one stored in the DB, send back success
       } else if (result[0].passHash === passHash) {
         callback(null, 'Successful login');
       } else {
@@ -22,7 +25,7 @@ const model = {
         callback(null, 'Username and password do not match');
       }
     });
-  }
+  },
 };
 
 module.exports = model;

@@ -14,6 +14,7 @@ const controller = {
     let column = '';
     let order = '';
     // console.log(`req.params.sortBy: ${req.params.sortBy}`);
+    // Set column and order variables by interpreting value
     // Most Recent
     if (req.params.sortBy === '1') {
       column = 'reviewTime';
@@ -35,7 +36,6 @@ const controller = {
       column = 'votes_up';
       order = 'DESC';
     }
-    // console.log(`column: ${column}, order: ${order}`);
     model.getByProdIdSort(req.params.productId, column, order, (err, result) => {
       if (err) {
         res.status(400).send(err);

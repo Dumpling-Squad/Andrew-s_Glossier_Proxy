@@ -16,7 +16,7 @@ const randomElement = (array) => {
   return array[randomIndex];
 };
 
-// This simulates an array of product {id, name} object I would get from Mrinal through proxy server
+// This creates an array of product {id, name} objects, using the productTitles array copied over from Mrinal's code
 const randomProductsGenerator = (numberOfProducts) => {
   const products = [];
   const productTitles = ['Lipstick', 'Lip Gloss', 'Eye Lashes', 'Lotion', 'Nail Polish', 'Concealer', 'Eyeliner', 'Brushes', 'Blender', 'Lash Stick'];
@@ -48,7 +48,7 @@ const randomBottomLine = () => {
 };
 
 const randomRating = () => {
-  const precision = 10; // 1 decimal
+  const precision = 10; // 1 decimal place
   const randomnum = Math.floor(Math.random() * (5 * precision - 1 * precision) + 1 * precision) / (1 * precision);
   return randomnum;
 };
@@ -72,7 +72,9 @@ const randomHelpful = () => {
 
 const randomDate = () => {
   const randomValueBetween = (min, max) => Math.random() * (max - min) + min;
+  // Start of date range
   const date1 = new Date('01-01-2000').getTime();
+  // Current datetime at seed
   const date2 = new Date().getTime();
   if (date1 > date2) {
     return new Date(randomValueBetween(date2, date1)).toLocaleDateString();
@@ -102,7 +104,7 @@ const randomReview = (numberOfUsers, productName, productId) => {
 
 const createReviews = (numberOfProducts, numberOfUsers, avgReviewsPerProduct) => {
   const products = randomProductsGenerator(numberOfProducts);
-  console.log(products);
+  // console.log(products);
   // This creates a range of the middle 50%, centered on the avg. In theory, a large enough selection will show values adhering to the avg.
   const min = avgReviewsPerProduct / 2;
   const max = avgReviewsPerProduct + min;
