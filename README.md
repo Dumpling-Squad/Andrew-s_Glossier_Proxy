@@ -16,10 +16,9 @@
 2. [Requirements](#Requirements)
 3. [Usage](#Usage)
 4. [Set-Up](#Set-Up)
-5. [Pending Features](#Pending-Features)
-6. [Development By](#Development-By)
-7. [License](#License)
-8. [Contributing](#Contributing)
+5. [Development By](#Development-By)
+6. [License](#License)
+7. [Contributing](#Contributing)
 
 ## Related Projects/Modules
 
@@ -39,7 +38,7 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 > Must install, seed, and fire up individual modules first.
 
-### Installing Dependencies
+## Set-Up
 
 From within the root directory:
 
