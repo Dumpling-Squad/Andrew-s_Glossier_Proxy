@@ -1,17 +1,10 @@
 {
-  "name": "andrew_proxy",
+  "name": "andrew-s_glossier_proxy",
   "version": "1.0.0",
-  "description": "A proxy server to be used as part of our 'Glossier' product page implementation for Hack Reactor FEC",
-  "author": "Andrew More",
+  "description": "A proxy server to be used as part of our 'Glossier' product page recreation.",
+  "main":"public/index.html",
+  "author": "Andrew More <recondomore@gmail.com>",
   "license": "GPL-3.0",
-  "engines": {
-    "node": ">=6.13.0"
-  },
-  "scripts": {
-    "start": "nodemon ./server/index.js",
-    "build": "webpack -w -d",
-    "seedDb": "node ./database/seeds/"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dumpling-Squad//Andrew-Proxy.git"
@@ -21,6 +14,14 @@
     "url": "https://github.com/Dumpling-Squad//Andrew-Proxy/issues"
   },
   "homepage": "https://github.com/Dumpling-Squad//Andrew-Proxy#readme",
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "scripts": {
+    "start": "nodemon ./server/index.js",
+    "build": "webpack -w -d",
+    "seedDb": "node ./database/seeds/"
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",

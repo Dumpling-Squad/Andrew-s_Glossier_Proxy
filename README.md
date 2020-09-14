@@ -1,23 +1,32 @@
-# Project Name
+# Andrew's Glossier Proxy
 
-> Project description
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![React](https://img.shields.io/badge/react-js-blue)
+![Node](https://img.shields.io/badge/node-js-blue)
+![Repo Size](https://img.shields.io/github/repo-size/Dumpling-Squad/Andrew-s_Glossier_Proxy)
+[![GitHub Issues](https://img.shields.io/github/issues/Dumpling-Squad/Andrew-s_Glossier_Proxy)](https://github.com/Dumpling-Squad/Andrew-s_Glossier_Proxy/issues)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+[![GPL License](https://img.shields.io/badge/license-GPL--3.0-orange)](https://www.gnu.org/licenses/gpl-3.0.html)
 
-## Related Projects
-
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+> A proxy server to be used as part of our 'Glossier' product page recreation. This proxy brings together four separate modules, following a service oriented architecture.
 
 ## Table of Contents
 
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
+1. [Related Projects](#Related-Projects)
+2. [Requirements](#Requirements)
+3. [Usage](#Usage)
+4. [Set-Up](#Set-Up)
+5. [Pending Features](#Pending-Features)
+6. [Development By](#Development-By)
+7. [License](#License)
+8. [Contributing](#Contributing)
 
-## Usage
+## Related Projects/Modules
 
-> Some usage instructions
+ Navigation Bar - https://github.com/Dumpling-Squad/nav-bar
+ Product Description - https://github.com/Dumpling-Squad/product-description
+ Reviews Module - https://github.com/Dumpling-Squad/reviews-module
+ Suggested Items - https://github.com/Dumpling-Squad/suggested-items
 
 ## Requirements
 
@@ -26,14 +35,33 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 - Node 6.13.0
 - etc
 
-## Development
+## Usage
+
+> Must install, seed, and fire up individual modules first.
 
 ### Installing Dependencies
 
 From within the root directory:
 
 ```sh
-npm install -g webpack
-npm install
+git clone
+yarn install
+yarn run seedDb
+yarn start
+yarn run build
 ```
 
+### Development by
+
+Developer / Author: [Andrew More](https://github.com/AndrewMore/)
+
+### License
+
+<a rel="license" href="https://www.gnu.org/licenses/gpl-3.0.html"><img alt="GNU General Public License Version 3.0" style="border-width:0" src="https://www.gnu.org/graphics/gplv3-or-later.svg" /></a><br />
+
+This work by <a href="https://github.com/AndrewMore/">Andrew More</a> is licensed under a <a rel="license" href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License Version 3.0</a>.
+
+### Contributing
+
+All contributions are welcome!
+Please take a moment to review guidelines [Feature Requests](.github/feature_request.md) | [Issues](.github/bug_report.md)
