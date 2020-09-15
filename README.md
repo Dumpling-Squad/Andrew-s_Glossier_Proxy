@@ -36,7 +36,7 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 ## Usage
 
-> Must install, seed, and fire up individual modules first.
+> Must install, seed, and run related modules first.
 
 ## Set-Up
 
@@ -45,9 +45,11 @@ From within the root directory:
 ```sh
 git clone
 yarn install
-yarn run seedDb
-yarn start
+```
+Run related modules, each on different ports
+```sh
 yarn run build
+yarn start
 ```
 
 ### Development by
