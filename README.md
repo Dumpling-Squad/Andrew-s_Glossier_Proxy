@@ -1,8 +1,8 @@
 # Andrew's Glossier Proxy
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![React](https://img.shields.io/badge/react-js-blue)
-![Node](https://img.shields.io/badge/node-js-blue)
+![Node](https://img.shields.io/badge/node-JS-blue)
+![Express](https://img.shields.io/badge/express-JS-blue)
 ![Repo Size](https://img.shields.io/github/repo-size/Dumpling-Squad/Andrew-s_Glossier_Proxy)
 [![GitHub Issues](https://img.shields.io/github/issues/Dumpling-Squad/Andrew-s_Glossier_Proxy)](https://github.com/Dumpling-Squad/Andrew-s_Glossier_Proxy/issues)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
