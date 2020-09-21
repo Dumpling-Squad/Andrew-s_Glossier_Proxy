@@ -1,0 +1,12 @@
+[submodule "modules/reviews-module"]
+	path = modules/reviews-module
+	url = https://github.com/Dumpling-Squad/reviews-module.git
+[submodule "modules/product-description"]
+	path = modules/product-description
+	url = https://github.com/Dumpling-Squad/product-description.git
+[submodule "modules/suggested-items"]
+	path = modules/suggested-items
+	url = https://github.com/Dumpling-Squad/suggested-items.git
+[submodule "modules/nav-bar"]
+	path = modules/nav-bar
+	url = https://github.com/Dumpling-Squad/nav-bar.git
