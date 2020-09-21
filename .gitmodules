@@ -1,6 +1,3 @@
-[submodule "modules/reviews-module"]
-	path = modules/reviews-module
-	url = https://github.com/Dumpling-Squad/reviews-module.git
 [submodule "modules/product-description"]
 	path = modules/product-description
 	url = https://github.com/Dumpling-Squad/product-description.git
