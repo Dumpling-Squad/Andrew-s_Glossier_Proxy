@@ -24,7 +24,7 @@ A proxy server to be used as part of our 'Glossier' product page recreation. Thi
 
 * Navigation Bar - https://github.com/Dumpling-Squad/nav-bar
 * Product Description - https://github.com/Dumpling-Squad/product-description
-* Reviews Module - https://github.com/Dumpling-Squad/reviews-module
+* Reviews Module - https://github.com/AndrewMore/reviews-module or https://github.com/Dumpling-Squad/reviews-module
 * Suggested Items - https://github.com/Dumpling-Squad/suggested-items
 
 ## Requirements
