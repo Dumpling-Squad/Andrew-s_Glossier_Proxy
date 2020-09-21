@@ -20,7 +20,7 @@ A proxy server to be used as part of our 'Glossier' product page recreation. Thi
 6. [License](#License)
 7. [Contributing](#Contributing)
 
-## Related Projects/Modules
+## Related Projects/Sub-Modules
 
 * Navigation Bar - https://github.com/Dumpling-Squad/nav-bar
 * Product Description - https://github.com/Dumpling-Squad/product-description
@@ -35,7 +35,7 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 ## Usage
 
-> Must install, seed, and run related modules first.
+> Must install, seed, and run sub-modules first.
 
 ## Set-Up
 
@@ -47,7 +47,6 @@ yarn install
 ```
 Run related modules, each on different ports
 ```sh
-yarn run build
 yarn start
 ```
 
