@@ -7,3 +7,6 @@
 [submodule "modules/nav-bar"]
 	path = modules/nav-bar
 	url = https://github.com/Dumpling-Squad/nav-bar.git
+[submodule "modules/reviews-module"]
+	path = modules/reviews-module
+	url = https://github.com/Dumpling-Squad/reviews-module.git
