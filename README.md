@@ -8,7 +8,7 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 [![GPL License](https://img.shields.io/badge/license-GPL--3.0-orange)](https://www.gnu.org/licenses/gpl-3.0.html)
 
-> A proxy server to be used as part of our 'Glossier' product page recreation. This proxy brings together four separate modules, following a service oriented architecture.
+A proxy server to be used as part of our 'Glossier' product page recreation. This proxy brings together four separate modules, following a service oriented architecture.
 
 ## Table of Contents
 
@@ -22,17 +22,16 @@
 
 ## Related Projects/Modules
 
- Navigation Bar - https://github.com/Dumpling-Squad/nav-bar
- Product Description - https://github.com/Dumpling-Squad/product-description
- Reviews Module - https://github.com/Dumpling-Squad/reviews-module
- Suggested Items - https://github.com/Dumpling-Squad/suggested-items
+* Navigation Bar - https://github.com/Dumpling-Squad/nav-bar
+* Product Description - https://github.com/Dumpling-Squad/product-description
+* Reviews Module - https://github.com/Dumpling-Squad/reviews-module
+* Suggested Items - https://github.com/Dumpling-Squad/suggested-items
 
 ## Requirements
 
 An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 - Node 6.13.0
-- etc
 
 ## Usage
 
@@ -43,7 +42,7 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 From within the root directory:
 
 ```sh
-git clone
+git clone --recursive
 yarn install
 ```
 Run related modules, each on different ports
