@@ -1,19 +1,19 @@
 {
   "name": "andrew-s_glossier_proxy",
   "version": "1.0.0",
-  "description": "A proxy server to be used as part of our 'Glossier' product page recreation.",
-  "main":"public/index.html",
+  "description": "A proxy server to be used as part of our 'Glossier.com' product page recreation.",
+  "main":"server/index.js",
   "author": "Andrew More <recondomore@gmail.com>",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dumpling-Squad//Andrew-Proxy.git"
+    "url": "git+https://github.com/Dumpling-Squad/Andrew-Proxy.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/Dumpling-Squad//Andrew-Proxy/issues"
+    "url": "https://github.com/Dumpling-Squad/Andrew-Proxy/issues"
   },
-  "homepage": "https://github.com/Dumpling-Squad//Andrew-Proxy#readme",
+  "homepage": "https://github.com/Dumpling-Squad/Andrew-Proxy#readme",
   "engines": {
     "node": ">=6.13.0"
   },
